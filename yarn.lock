@@ -11420,6 +11420,11 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
+typeface-rajdhani@^0.0.72:
+  version "0.0.72"
+  resolved "https://registry.yarnpkg.com/typeface-rajdhani/-/typeface-rajdhani-0.0.72.tgz#32a49b154b26db821cf97710e9027df10f487d1b"
+  integrity sha512-iIJ1Goi0v8pieIa6ZInEQtNa+oY9Di6PECCBrqB7piQx8lPA1wjPtbrL6edfhHGPzYjZPIhfz7Dc/6nquFwGyA==
+
 ua-parser-js@^0.7.18:
   version "0.7.20"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.20.tgz#7527178b82f6a62a0f243d1f94fd30e3e3c21098"

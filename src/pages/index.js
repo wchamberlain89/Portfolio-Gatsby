@@ -1,17 +1,41 @@
 import React from "react"
+require("typeface-rajdhani")
 
 const IndexPage = () => (
+
 
   <div style={{ backgroundColor: "#050505" }}>
 
     {/*Main Intro Section*/}
-    <section>
-      <div style={{ 
-        height: "100vh", 
-        width: "100vw", 
-        backgroundColor: "#FEE400" }}>
+    <section style={{ 
+      height: "100vh", 
+      width: "100vw", 
+      backgroundColor: "#FEE400" }}>
+      
 
+      {/*Title Text */}
+      <div>
+        <h1 style={{ 
+          fontFamily: "Rajdhani", 
+          fontSize: "6rem", 
+          fontWeight: "bold",
+          lineHeight: "110%",
+          letterSpacing: "0.1em",
+          marginBottom: ".15em"
+        }}>
+          <div>Ward</div>
+          <div>Chamberlain</div>
+        </h1>
+
+        <h3 style={{
+          fontFamily: "Rajdhani",
+          fontSize: "2.25rem",
+          letterSpacing: "0.2em"
+        }}>
+          Front End Developer
+        </h3>
       </div>
+
     </section>
 
     {/*Slide Section*/}
@@ -33,9 +57,9 @@ const IndexPage = () => (
 
     {/*Triangle Border Shape*/}
     <div style={{ 
-      borderLeft: "30vw solid transparent", 
+      borderLeft: "20vw solid transparent", 
       borderTop: "5rem solid #A72C2C", 
-      borderRight: "70vw solid transparent" }}>
+      borderRight: "80vw solid transparent" }}>
     </div>
 
     {/*Projects Section*/}
