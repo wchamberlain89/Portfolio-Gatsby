@@ -1,4 +1,6 @@
 import React from "react"
+import DownArrow from "../assets/svg/downArrow.svg"
+
 require("typeface-rajdhani")
 
 const IndexPage = () => (
@@ -10,33 +12,57 @@ const IndexPage = () => (
     <section style={{ 
       height: "100vh", 
       width: "100vw", 
-      backgroundColor: "#FEE400" }}>
-      
+      backgroundColor: "#FEE400"
+      }}>
+      <div className="section-container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 5vw", position: "relative", top: "50%", transform: "translateY(-50%)" }}>
+        
+        <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "5em" }}>
 
-      {/*Title Text */}
-      <div>
-        <h1 style={{ 
-          fontFamily: "Rajdhani", 
-          fontSize: "6rem", 
-          fontWeight: "bold",
-          lineHeight: "110%",
-          letterSpacing: "0.1em",
-          marginBottom: ".15em"
-        }}>
-          <div>Ward</div>
-          <div>Chamberlain</div>
-        </h1>
+          <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
+            
+            {/*Title Text */}
+            <h1 style={{ 
+              fontFamily: "Rajdhani", 
+              fontSize: "6rem", 
+              fontWeight: "800",
+              lineHeight: "110%",
+              letterSpacing: "0.1em",
+              marginBottom: ".15em"
+            }}>
+              <div>Ward</div>
+              <div>Chamberlain</div>
+            </h1>
 
-        <h3 style={{
-          fontFamily: "Rajdhani",
-          fontSize: "2.25rem",
-          letterSpacing: "0.2em"
-        }}>
-          Front End Developer
-        </h3>
+            <h3 style={{
+              fontFamily: "Rajdhani",
+              fontSize: "2.25rem",
+              letterSpacing: "0.2em"
+            }}>
+              Front End Developer
+            </h3>
+          
+          </div>
+
+          {/* Menu Links */}
+          <nav style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
+            <button style={{ fontFamily: "Rajdhani", fontSize: "1.5em", letterSpacing: "0.1em", fontWeight: "600", padding: "1.75em 0" }}>About</button>
+            <button style={{ fontFamily: "Rajdhani", fontSize: "1.5em", letterSpacing: "0.1em", fontWeight: "600", padding: "1.75em 0" }}>Projects</button>
+            <button style={{ fontFamily: "Rajdhani", fontSize: "1.5em", letterSpacing: "0.1em", fontWeight: "600", padding: "1.75em 0" }}>Contact</button>
+          </nav>
+
+        </div>
+        
+        {/* Arrow Indicator */}
+        <div style={{ width: "45px", height: "45px", backgroundColor: "#050505", display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <svg width="31" height="20" viewBox="0 0 31 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 3L15.5 17L28 3" stroke="#FEE400" stroke-width="2" stroke-linecap="square"/>
+          </svg>
+        </div>
+
       </div>
 
     </section>
+      
 
     {/*Slide Section*/}
     <section style={{backgroundColor: "#050505", display: "flex"}}>
