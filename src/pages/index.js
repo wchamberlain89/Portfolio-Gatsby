@@ -2,6 +2,7 @@ import React from "react"
 import SectionHeader from './../components/SectionHeader';
 
 require("typeface-rajdhani")
+require("./../assets/images/gatsby.png")
 
 const IndexPage = () => (
 
@@ -83,8 +84,8 @@ const IndexPage = () => (
       </div>
       
       {/* Right Red Slide */}
-      <div style={{ width: "calc(50% - 8em)", backgroundColor: "#A72C2C", padding: "0 4em 100vh 4em" }}>
-        <div style={{ height: "100vh", display: "flex", alignItems: "center" }}>
+      <div style={{ width: "calc(50% - 8em)", backgroundColor: "#A72C2C", padding: "100vh 4em 0 4em" }}>
+        <div style={{ height: "100vh", display: "flex", alignItems: "center", position: "sticky", top: "0" }}>
           <p style={{ fontSize: "5em", color: "white", fontFamily: "Rajdhani", lineHeight: "150%", fontWeight: "800" }}>I HAVE A PASSION FOR  MEANINGFUL MOTION, INTERACTIVITY, AND BRINGING  BEAUTIFUL UI / UX DESIGNS TO LIFE</p>
         </div>
       </div>
@@ -101,12 +102,16 @@ const IndexPage = () => (
     >
       <div className="section-width-container" style={{ maxWidth: "980px", margin: "0 auto", padding: "0 5vw" }}>
         <SectionHeader>About</SectionHeader>
-        <p style={{ fontFamily: "Rajdhani", fontSize: "2em", fontWeight: "600", color: "white", letterSpacing: "0.1em", lineHeight: "160%", marginTop: "2rem"}}>
+        <p style={{ fontFamily: "Rajdhani", fontSize: "2em", fontWeight: "600", color: "white", letterSpacing: "0.1em", lineHeight: "160%", margin: "2em 0"}}>
           I specialize in making Javascript Apps on the Front-End, Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
           Lorem mattis rhoncus dictum pulvinar. 
           Egestas volutpat tempor massa pellentesque ornare proin sed vehicula. 
           Id at volutpat laoreet amet varius id. Tortor sodales faucibus sit netus.
         </p>
+        <SectionHeader>Skills</SectionHeader>
+        <div className="skill-grid">
+          <img src="./../assets/images/gatsby.png"/>
+        </div>
       </div>
     </section>
 
@@ -118,7 +123,11 @@ const IndexPage = () => (
       width: "100%",
       backgroundColor: "#050505"
     }}>
+      <div className="section-width-container" style={{ maxWidth: "980px", margin: "0 auto", padding: "4em 5vw 0" }}>
+        <SectionHeader>Projects</SectionHeader>
+      </div>
     </section>
+
 
     {/*Contact Me Section*/}
     <section style={{ backgroundColor: "#FEE400", height: "100vh", width: "100%" }}></section>
