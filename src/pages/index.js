@@ -1,5 +1,6 @@
 import React from "react"
 import SectionHeader from './../components/SectionHeader';
+import Project from './../components/Project';
 
 require("typeface-rajdhani")
 require("./../assets/images/gatsby.png")
@@ -125,6 +126,7 @@ const IndexPage = () => (
     }}>
       <div className="section-width-container" style={{ maxWidth: "980px", margin: "0 auto", padding: "4em 5vw 0" }}>
         <SectionHeader>Projects</SectionHeader>
+        <Project/>
       </div>
     </section>
 
