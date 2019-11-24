@@ -1,22 +1,26 @@
 import React from 'react';
 import styles from './project.module.css';
+import logo from './../../assets/svg/WalkerTrekker.svg';
+
+require("typeface-rajdhani")
 
 export default () => {
   return (
-    <div className="outer-container">
-      <div className="left-column">
-        <img className="logo" src="./../../images/WalkerTrekker.svg"/>
+    <div className={styles.container}>
+      <div className={styles.innerContainer}>
+        <img className="logo" src={logo} alt="logo"w/>
       </div>
-      <div className="right-column">
-        <p>Lantern Archives is a campaign manager for the board game Kingdom Death. 
+      <div className={styles.innerContainer}>
+        <p className={styles.bodyText}>Lantern Archives is a campaign manager for the board game Kingdom Death. 
           Lantern Archives will track your all your settlements character details and 
           Inventory Lantern Archives is a campaign manager for the board game Kingdom Death. 
           Lantern Archives will track your all your settlements 
           character details and Inventory
         </p>
         <div>
-          <a href="#">View Github</a>
-          <a href="#">View Details</a>
+          
+          <a className={styles.button} href="#">View Github</a>
+          <a className={styles.button} href="#">View Details</a>
         </div>
       </div>
     </div>
