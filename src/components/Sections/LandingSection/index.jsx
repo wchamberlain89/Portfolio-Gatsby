@@ -1,6 +1,9 @@
 import React from 'react';
-import SideNavigationMenu from './../SideNavigationMenu';
-import WidthContainer from './../WidthContainer';
+
+import styles from './LandingSection.module.css';
+
+import SideNavigationMenu from '../../Blocks/SideNavigationMenu';
+import WidthContainer from '../../Bits/WidthContainer';
 
 
 export default () => {
@@ -17,25 +20,12 @@ export default () => {
           <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
             
             {/*Title Text */}
-            <h1 style={{ 
-              fontFamily: "Rajdhani", 
-              fontSize: "6rem", 
-              fontWeight: "800",
-              lineHeight: "110%",
-              letterSpacing: "0.1em",
-              marginBottom: ".15em",
-              color: "#000"
-            }}>
+            <h1 className={styles.title}>
               <div>Ward</div>
               <div>Chamberlain</div>
             </h1>
 
-            <h3 style={{
-              fontFamily: "Rajdhani",
-              fontSize: "2.25rem",
-              letterSpacing: "0.2em",
-              color: "#000"
-            }}>
+            <h3 className={styles.subtitle}>
               Front End Developer
             </h3>
           
@@ -49,6 +39,7 @@ export default () => {
             <path d="M3 3L15.5 17L28 3" stroke="#A72C2C" stroke-width="2" stroke-linecap="square"/>
           </svg>
         </div>
+
       </WidthContainer>        
     </div>
   )
