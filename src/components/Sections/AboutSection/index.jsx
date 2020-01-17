@@ -1,16 +1,15 @@
 import React from 'react';
-
-import WidthContainer from '../../Bits/WidthContainer';
-import SectionHeader from '../../Bits/SectionHeader';
-import gatsbyIcon from './../../../assets/images/gatsby.png';
+import styles from './AboutSection.module.css';
+import { WidthContainer, SectionHeader } from '../../Bits/';
+import { SkillGrid } from '../../Blocks/';
 
 export default () => {
   return (
-    <WidthContainer>
+    <WidthContainer style={{ padding: "4em 0" }}>
           
       <SectionHeader>About</SectionHeader>
       
-      <p style={{ fontFamily: "Rajdhani", fontSize: "2em", fontWeight: "600", color: "white", letterSpacing: "0.1em", lineHeight: "160%", margin: "2em 0"}}>
+      <p className={ styles.aboutText }>
         I specialize in making Javascript Apps on the Front-End, Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
         Lorem mattis rhoncus dictum pulvinar. 
         Egestas volutpat tempor massa pellentesque ornare proin sed vehicula. 
@@ -19,9 +18,7 @@ export default () => {
       
       <SectionHeader>Skills</SectionHeader>
       
-      <div className="skill-grid">
-        <img src={gatsbyIcon}/>
-      </div>
+      <SkillGrid/>
 
     </WidthContainer>
   )

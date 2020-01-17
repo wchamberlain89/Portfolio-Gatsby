@@ -1,16 +1,12 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import styles from './SectionHeader.module.css';
 
 const SectionHeader = (props) => {
   return (
-    <div style={{ borderBottom: ".2rem solid white" }}>
-      <h2 style={{ fontSize: "5rem", color: "white", fontFamily: "Rajdhani", marginBottom: ".5rem", fontWeight: "600" }}>{ props.children }</h2>
-    </div>
+    <h2 className={ styles.sectionHeader } {...props}>
+      { props.children }
+    </h2>
   )
-}
-
-SectionHeader.propTypes = {
-  text : PropTypes.string.isRequired
 }
 
 export default SectionHeader;

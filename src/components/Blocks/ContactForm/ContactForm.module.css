@@ -1,0 +1,46 @@
+.container {
+  background-color: #000;
+  padding: 2em;
+}
+
+.formText {
+  font-family: "Rajdhani";
+  font-weight: 400;
+  color: white;
+  font-size: 1.5rem;
+  line-height: 150%;
+  letter-spacing: 1px;
+  margin-bottom: 2em;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input {
+  padding: .5em 1em;
+  font-family: "Rajdhani";
+  font-weight: 600;
+  font-size: 1.25em;
+  letter-spacing: 1px;
+  margin-bottom: 2.54em;
+}
+
+.message {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 16rem;
+  box-sizing: border-box;
+}
+
+.button {
+  padding: 0.75rem 1.25rem;
+  border: 2px solid #FEE400;
+  color: #FEE400;
+  font-family: "Rajdhani";
+  text-decoration: none;
+  display: inline-block;
+}

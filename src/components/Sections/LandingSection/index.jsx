@@ -1,8 +1,5 @@
 import React from 'react';
-
 import styles from './LandingSection.module.css';
-
-import SideNavigationMenu from '../../Blocks/SideNavigationMenu';
 import WidthContainer from '../../Bits/WidthContainer';
 
 

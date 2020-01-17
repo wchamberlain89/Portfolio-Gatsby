@@ -1,0 +1,15 @@
+.sectionHeader {
+  color: white;
+  font-family: "Rajdhani";
+  font-weight: 600;
+  font-size : 5rem;
+  text-transform: uppercase;
+}
+
+.sectionHeader::after {
+  content: "";
+  display: block;
+  height: .3em;
+  border-bottom : .2rem solid white;
+  margin-bottom : 10vh;
+}

@@ -1,0 +1,13 @@
+.aboutText {
+  color : white;
+  font-family : "Rajdhani";
+  font-size : 2em;
+  font-weight : 600;
+  letter-spacing : 0.1em;
+  line-height : 160%;
+}
+
+.aboutText::after {
+  content: "";
+  margin: 2em;
+}
