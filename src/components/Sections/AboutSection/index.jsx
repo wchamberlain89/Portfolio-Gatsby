@@ -5,7 +5,7 @@ import { SkillGrid } from '../../Blocks/';
 
 export default () => {
   return (
-    <WidthContainer style={{ padding: "4em 0" }}>
+    <WidthContainer>
           
       <SectionHeader>About</SectionHeader>
       

@@ -10,7 +10,7 @@ export default () => {
         width: "100%", 
         backgroundColor: "#A72C2C"
       }}>
-      <WidthContainer style={{ padding: "0 5vw", position: "relative", top: "50%", transform: "translateY(-50%)", width: "100%" }}>
+      <WidthContainer style={{ position: "relative", top: "50%", transform: "translateY(-50%)", width: "100%" }}>
         
         <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "5em" }}>
 

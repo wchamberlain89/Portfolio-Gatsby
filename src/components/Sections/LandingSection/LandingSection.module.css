@@ -1,6 +1,6 @@
 .title {
   font-family: "Rajdhani";
-  font-size:6rem; 
+  font-size: 5rem; 
   font-weight: 800;
   line-height: 110%;
   letter-spacing: 0.1em;
@@ -13,4 +13,14 @@
   font-size: 2.25rem;
   letter-spacing: 0.2em;
   color: #000;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
 }
