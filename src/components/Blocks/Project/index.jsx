@@ -7,11 +7,11 @@ require("typeface-rajdhani")
 export default () => {
   return (
     <div className={styles.container}>
-      <div className={styles.innerContainer}>
-        <img className="logo" src={logo} alt="logo"w/>
+      <div className={styles.section__container}>
+        <img className={styles.logo} src={logo} alt="logo"w/>
       </div>
-      <div className={styles.innerContainer}>
-        <p className={styles.bodyText}>Lantern Archives is a campaign manager for the board game Kingdom Death. 
+      <div className={styles.section__container}>
+        <p className={styles.body}>Lantern Archives is a campaign manager for the board game Kingdom Death. 
           Lantern Archives will track your all your settlements character details and 
           Inventory Lantern Archives is a campaign manager for the board game Kingdom Death. 
           Lantern Archives will track your all your settlements 

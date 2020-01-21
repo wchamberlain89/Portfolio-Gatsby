@@ -17,7 +17,6 @@ const IndexPage = () => (
 
    
     <LandingSection/>
-    <IntroSlideSection/>
     <AboutSection/>
     <ProjectsSection/>
     <ContactSection/>

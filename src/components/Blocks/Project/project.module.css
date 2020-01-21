@@ -1,14 +1,21 @@
 .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 10vh;
 }
 
-.innerContainer {
-  width: 100%;
+.section__container {
+  width: 48%;
+  margin-bottom: 2em;
 }
 
-.bodyText {
+.logo {
+  width: 100%;
+  max-width: 600px;
+}
+
+.body {
   font-family: "Rajdhani";
   font-weight: 400;
   color: white;
@@ -29,4 +36,13 @@
 
 .button:hover {
   background-color: "#FEE400";
+}
+
+@media (max-width: 900px) {
+  .container {
+    display: block;
+  }
+  .section__container {
+    width: 100%;
+  }
 }
