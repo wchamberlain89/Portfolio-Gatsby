@@ -1,5 +1,6 @@
 import React from "react"
 import { IntroSlideSection, LandingSection, AboutSection, ProjectsSection, ContactSection, FooterSection } from './../components/Sections';
+import Triangle from './../assets/svg/Triangle.svg';
 
 
 
@@ -19,6 +20,7 @@ const IndexPage = () => (
     <LandingSection/>
     <IntroSlideSection/>
     <AboutSection/>
+    <img src={Triangle} style={{position: "relative", width: "100%", marginBottom: "4rem", top: "-1px"}}/>
     <ProjectsSection/>
     <ContactSection/>
     <FooterSection/>

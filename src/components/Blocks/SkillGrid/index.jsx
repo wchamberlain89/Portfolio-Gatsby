@@ -51,7 +51,7 @@ export const dummyData = [
 
 export default () => {
   return (
-    <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
+    <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", paddingBottom: "4rem" }}>
       {
         dummyData.map( ( item, index ) => <SkillIcon {...item} />
         

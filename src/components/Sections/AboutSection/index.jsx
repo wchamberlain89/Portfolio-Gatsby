@@ -3,10 +3,12 @@ import styles from './AboutSection.module.css';
 import { WidthContainer, SectionHeader } from '../../Bits/';
 import { SkillGrid } from '../../Blocks/';
 
+
 export default () => {
   return (
-    <WidthContainer>
-          
+  <div className={ styles.background }>
+    <WidthContainer style={{ paddingTop: "4em", backgroundColor: "#A72C2C" }}>
+      
       <SectionHeader>About</SectionHeader>
       
       <p className={ styles.aboutText }>
@@ -19,7 +21,8 @@ export default () => {
       <SectionHeader>Skills</SectionHeader>
       
       <SkillGrid/>
-
+      
     </WidthContainer>
+  </div>
   )
 }

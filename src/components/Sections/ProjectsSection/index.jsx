@@ -11,7 +11,7 @@ export default () => {
       }}
     >
       <WidthContainer>
-        <SectionHeader style={{marginBottom: "2em"}}>Projects</SectionHeader>
+        <SectionHeader>Projects</SectionHeader>
         <Project/>
         <Project/>
         <Project/>
