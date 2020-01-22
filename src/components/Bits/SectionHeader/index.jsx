@@ -3,7 +3,7 @@ import styles from './SectionHeader.module.css';
 
 const SectionHeader = (props) => {
   return (
-    <h2 className={ styles.sectionHeader } {...props}>
+    <h2 className={ `${styles.sectionHeader} ${ (props.alt ? styles.alt : '') }` } {...props}>
       { props.children }
     </h2>
   )

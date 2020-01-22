@@ -9,7 +9,15 @@
 .sectionHeader::after {
   content: "";
   display: block;
-  height: .3em;
-  border-bottom : .2rem solid white;
-  margin-bottom : 10vh;
+  height: .2em;
+  border-bottom : 5px solid white;
+  margin-bottom : 2rem;
+}
+
+.sectionHeader.alt {
+  color: black;
+}
+
+.sectionHeader.alt::after {
+  border-bottom-color: black;
 }

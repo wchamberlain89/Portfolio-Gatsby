@@ -32,6 +32,7 @@
   font-family: "Rajdhani";
   text-decoration: none;
   display: inline-block;
+  margin-right: 2rem;
 }
 
 .button:hover {
