@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './project.module.css';
-import logo from './../../../assets/svg/WalkerTrekker.svg';
+import logo from './../../../images/svg/WalkerTrekker.svg';
 
 require("typeface-rajdhani")
 

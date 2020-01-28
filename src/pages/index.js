@@ -1,6 +1,6 @@
 import React from "react"
 import { IntroSlideSection, LandingSection, AboutSection, ProjectsSection, ContactSection, FooterSection } from './../components/Sections';
-import Triangle from './../assets/svg/Triangle.svg';
+import Triangle from './../images/svg/Triangle.svg';
 
 
 

@@ -1,6 +1,4 @@
 import React from 'react';
-import Triangle from './../../../assets/svg/Triangle.svg';
-import { relative } from 'path';
 
 export default () => {
   return (

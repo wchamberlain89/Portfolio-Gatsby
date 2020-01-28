@@ -1,6 +1,6 @@
 import React from 'react';
 import SkillIcon from '../../Bits/SkillIcon';
-import gatsbyIcon from './../../../assets/images/gatsby.png';
+import gatsbyIcon from './../../../images/gatsby.png';
 
 export const dummyData = [
   {

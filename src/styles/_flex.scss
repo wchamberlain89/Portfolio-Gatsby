@@ -1,0 +1,19 @@
+@mixin flex($justify: none, $align: none , $wrap: none, $direction: none) {
+  display: flex;
+  @if $direction != none {
+    flex-direction: #{$direction};
+  }
+  @if $wrap != none {
+    flex-wrap: #{$wrap};
+  }
+  @if $align != none {
+    align-items: #{$align};
+  }
+  @if $justify != none {
+    justify-content: #{$justify};
+  }
+}
+
+@mixin vertically-centered {
+  @include flex($justify: center, $align: center)
+}
