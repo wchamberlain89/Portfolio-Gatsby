@@ -25,7 +25,14 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`, // This path is relative to the root of the site.
       },
-    }
+    },
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        includePaths: ['src/styles'],
+        implementation: require("sass"),
+      },
+    },
     
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

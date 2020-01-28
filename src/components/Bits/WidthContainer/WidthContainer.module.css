@@ -1,5 +1,5 @@
 .container {
   max-width: 1600px;
-  padding: 0 2em;
+  min-width: 90%;
   margin: 0 auto;
 }
