@@ -1,5 +1,7 @@
+@use "site-colors" as c;
+
 .container {
-  background-color: #000;
+  background-color: c.get("background");
   padding: 2em;
 }
 

@@ -1,27 +1,22 @@
-@use "variables" as c;
+@use "site-colors" as c;
 @use "flex" as *;
 
 .section__container {
-  height: 100vh;
-  
   @include flex($align: center);
-  background-color: c.$background-color-primary;
-}
-
-.logoText__container {
-  margin-bottom: 5em;
+  
+  height: 100vh;
+  background-color: c.get("background");
 }
 
 .logoText__title {
   font-family: "Rajdhani";
   font-size: 5rem; 
   font-weight: 800;
-  color: #050505;
+  color: c.get("text", "secondary");
   line-height: 110%;
   letter-spacing: 0.1em;
 
   margin-bottom: .15em;
-  
 }
 
 .logoText__subtitle {
