@@ -1,7 +1,9 @@
-@use "site-colors" as c;
+@use "theme/site-colors" as colors;
+@use "base/typography" as type;
+@use "sass:map";
 
 .container {
-  background-color: c.get("background");
+  background-color: colors.get("background", "secondary");
   padding: 2em;
 }
 
@@ -9,7 +11,7 @@
   font-family: "Rajdhani";
   font-weight: 400;
   color: white;
-  font-size: 1.5rem;
+  
   line-height: 150%;
   letter-spacing: 1px;
   margin-bottom: 2em;
@@ -25,7 +27,7 @@
   padding: .5em 1em;
   font-family: "Rajdhani";
   font-weight: 600;
-  font-size: 1.25em;
+  font-size: map.get(type.$sizes, "small");
   letter-spacing: 1px;
   margin-bottom: 2.54em;
 }

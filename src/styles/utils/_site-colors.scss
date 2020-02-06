@@ -1,0 +1,16 @@
+$_color-red-1: #A72C2C;
+$_color-black-1: #050505;
+$_color-yellow-1: #FEE400;
+$_color-white-1: #FFFFFF;
+
+$colors: (
+  'background': (
+    'primary': $_color-red-1,
+    'secondary': $_color-black-1,
+    'accent': $_color-yellow-1
+  ),
+  'text': (
+    'primary': $_color-black-1,
+    'secondary': $_color-white-1
+  )
+);

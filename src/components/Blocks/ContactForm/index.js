@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './ContactForm.module.css';
+import styles from './ContactForm.module.scss';
 
 export default class ContactForm extends React.Component {
   constructor(props) {

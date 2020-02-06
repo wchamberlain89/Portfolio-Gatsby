@@ -1,5 +1,5 @@
-@use "site-colors" as c;
-@use "flex" as *;
+@use "theme/site-colors" as c;
+@use "layout/flex" as *;
 
 .section__container {
   @include flex($align: center);
