@@ -1,51 +1,21 @@
-@use "theme/site-colors" as c;
-@use "layout/flex" as *;
+@use 'sass:map';
+@use 'abstracts' as __;
 
-.section__container {
-  @include flex($align: center);
-  
+.layout__container {
+  background-color: __.color("background", "primary");
   height: 100vh;
-  background-color: c.get("background");
+  display: flex;
+  align-items: center;   
 }
 
-.logoText__title {
-  font-family: "Rajdhani";
-  font-size: 5rem; 
-  font-weight: 800;
-  color: c.get("text", "secondary");
-  line-height: 110%;
-  letter-spacing: 0.1em;
-
+.__title {
+  font-size: __.font-size("scale-4"); 
+  font-weight: 700;
   margin-bottom: .15em;
 }
 
-.logoText__subtitle {
-  font-family: Rajdhani;
-  font-size: 2.25rem;
-  font-weight: 800;
-  color: #000;
-  letter-spacing: 0.2em;
+.__subtitle {
+  font-size: __.font-size("scale-3");
+  font-weight: 700;
 }
 
-.arrowIndicator__background {
-  width: 3em;
-  height: 3em;
-  padding: .5em;
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background-color: #050505;
-  box-shadow: -1px 1px 1px 1px white;
-}
-
-@media (max-width: 600px) {
-  .title {
-    font-size: 3.75rem;
-  }
-
-  .subtitle {
-    font-size: 1.5rem;
-  }
-}

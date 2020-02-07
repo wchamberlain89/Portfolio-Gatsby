@@ -1,7 +1,2 @@
-@import 'base/typography';
-@import 'base/reset'; 
-
-@import 'layout/breakpoints';
-@import 'layout/flex';
-
-@import 'theme/site-colors';
+@use 'abstracts';
+@use 'base';

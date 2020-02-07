@@ -1,0 +1,38 @@
+@use "sass:map";
+@use 'vendors/modularscale' as *;
+
+$modularscale: (
+  base: 1.5rem,
+  400px: (
+    ratio: 1.125
+  ),
+  600px: (
+    ratio: 1.25,
+  ),
+  900px: (
+    ratio: 1.333,
+  ),
+  1200px: (
+    ratio: 1.333,
+  ),
+);
+
+$sizes: (
+  'scale-0': ms(-1),
+  'scale-1': ms(0),
+  'scale-2': ms(1),
+  'scale-3': ms(2),
+  'scale-4': ms(4),
+  'scale-5': ms(5),
+  'scale-6': ms(6)
+);
+
+@function font-size($size: 'scale-1') {
+  @if map.has-key($sizes, $size) {
+    @debug($size);
+    @return map.get($sizes, $size);
+  }
+  @else {
+    @warn "Size: #{$size} doesn't exist. Try #{$sizes} instead";
+  }
+}

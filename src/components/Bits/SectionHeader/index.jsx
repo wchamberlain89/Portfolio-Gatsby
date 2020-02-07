@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './SectionHeader.module.css';
+import styles from './SectionHeader.module.scss';
 
 const SectionHeader = (props) => {
   return (

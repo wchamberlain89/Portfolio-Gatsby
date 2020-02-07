@@ -1,0 +1,50 @@
+@use 'abstracts' as __;
+
+.layout__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100vh 100vh;
+  grid-template-areas: 
+  "left-panel ."
+  ". right-panel";
+  
+  background-color: __.color("background", "primary");
+  line-height: 3rem;
+}
+
+.panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__left {
+    grid-area: left-panel;
+    position: sticky;
+    top: 0;
+    background-color: __.color("background", "primary");
+  }
+
+  &__right {
+    grid-area: right-panel;
+  }
+}
+
+.left_card {
+  width: 80%;
+  min-height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em;
+  background-color: __.color("background", "secondary");
+}
+
+.left_card_text {
+  font-size: __.font-size("scale-2");
+  color: __.color("text", "accent");
+}
+
+.right_panel_text {
+  font-size: __.font-size("scale-3");
+  color: __.color("text", "light");
+}

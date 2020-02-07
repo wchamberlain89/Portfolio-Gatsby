@@ -1,0 +1,14 @@
+@use 'sass:map';
+@use './../variables/colors' as *;
+
+@function color($category, $type) {
+  $type-map: map-get($map: $colors, $key: $category);
+
+  @if not ($type-map) {
+    @error "$category: #{$category} doesn't exist. Available categories are [ #{map.keys($colors)} ]";
+  } @else if not (map.has-key($type-map, $type)) {
+    @error "$category: #{$category} doesn't contain color of $type: #{$type}. Available types are [ #{map.keys($type-map)} ]";
+  }
+
+  @return map-get($map: $type-map, $key: $type);
+}

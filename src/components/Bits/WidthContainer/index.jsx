@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './WidthContainer.module.css'
+import styles from './WidthContainer.module.scss';
 
 export default ( props ) => {
   return (

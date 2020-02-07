@@ -1,13 +1,13 @@
 import React from 'react';
-import styles from './AboutSection.module.css';
+import styles from './AboutSection.module.scss';
 import { WidthContainer, SectionHeader } from '../../Bits/';
 import { SkillGrid } from '../../Blocks/';
 
 
 export default () => {
   return (
-  <div className={ styles.background }>
-    <WidthContainer style={{ paddingTop: "4em", backgroundColor: "#A72C2C" }}>
+  <div className={ styles.layout__container} >
+    <WidthContainer>
       
       <SectionHeader>About</SectionHeader>
       

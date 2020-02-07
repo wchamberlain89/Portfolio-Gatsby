@@ -10,7 +10,8 @@ $colors: (
     'accent': $_color-yellow-1
   ),
   'text': (
-    'primary': $_color-black-1,
-    'secondary': $_color-white-1
+    'dark': $_color-black-1,
+    'light': $_color-white-1,
+    'accent': $_color-yellow-1
   )
 );

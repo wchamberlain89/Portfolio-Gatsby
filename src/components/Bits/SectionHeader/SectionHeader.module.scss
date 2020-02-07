@@ -1,0 +1,26 @@
+@use 'abstracts' as __;
+
+.sectionHeader {
+  $main-color: __.color('text', 'light');
+  $alternate-color: __.color('text', 'dark');
+
+  font-size: __.font-size('scale-4');
+  text-transform: uppercase;
+  color: $main-color;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 5px;
+    border-bottom : 3px solid $main-color;
+    margin-bottom: 2rem;
+  }
+
+  &__alt {
+    color: $alternate-color;
+
+    &::after {
+      border-bottom-color: $alternate-color;
+    }
+  }
+}

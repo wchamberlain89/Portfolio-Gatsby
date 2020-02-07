@@ -1,9 +1,9 @@
-@use "theme/site-colors" as colors;
-@use "base/typography" as type;
+@use 'abstracts' as __;
+
 @use "sass:map";
 
 .container {
-  background-color: colors.get("background", "secondary");
+  background-color: __.color("background", "secondary");
   padding: 2em;
 }
 
@@ -27,7 +27,6 @@
   padding: .5em 1em;
   font-family: "Rajdhani";
   font-weight: 600;
-  font-size: map.get(type.$sizes, "small");
   letter-spacing: 1px;
   margin-bottom: 2.54em;
 }

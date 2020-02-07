@@ -1,0 +1,22 @@
+@use 'abstracts' as __;
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:400,600,700&display=swap');
+
+html {
+  font-size: 16px;
+  line-height: 1.5rem;
+  @include __.bp('large') {
+    font-size: 14px;
+  }
+  @include __.bp('medium') {
+    font-size: 12px;
+  }
+  @include __.bp('small') {
+    font-size: 10px;
+    line-height: 1.4rem;
+  }
+}
+
+body {
+  font-family: 'Rajdhani', sans-serif;
+  letter-spacing: 1px;
+}
