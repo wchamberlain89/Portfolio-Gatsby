@@ -2,17 +2,19 @@
 @use 'vendors/modularscale' as *;
 
 $modularscale: (
-  base: 1.5rem,
   400px: (
-    ratio: 1.125
+    ratio: 1.125,
   ),
   600px: (
+    base: 1.3rem,
     ratio: 1.25,
   ),
   900px: (
+    base: 1.4rem,
     ratio: 1.333,
   ),
   1200px: (
+    base: 1.5rem,
     ratio: 1.333,
   ),
 );

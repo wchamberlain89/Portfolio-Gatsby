@@ -7,9 +7,5 @@
 .aboutText {
   color : __.color("text", "light");
   font-size: __.font-size("scale-2");
-  line-height: 1.5em;
-}
-
-.aboutText + * {
-  margin-top: 2rem;
-}
+  line-height: 150%;
+} 

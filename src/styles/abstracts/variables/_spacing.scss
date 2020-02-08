@@ -1,0 +1,44 @@
+@use 'sass:map';
+
+/* spacing values */
+$space-unit: 1em;
+$space-unit-fixed: 1rem;
+
+$spacings: (
+  /* scaling vlues - effected by text-size */
+  'scaling': (
+    'xx-small':  (0.25 * $space-unit),
+    'x-small':   (0.5 * $space-unit),
+    'small':   (0.75 * $space-unit),
+    'medium':   (1.25 * $space-unit),
+    'large':   (2 * $space-unit),
+    'x-large':   (3.25 * $space-unit),
+    'xx-large':  (5.25 * $space-unit),
+  ),
+  /* fixed values - not affected by $space-unit or $text-base-size */
+  'fixed' : (
+    'xx-small':  (0.25 * $space-unit-fixed),
+    'x-small':   (0.5 * $space-unit-fixed),
+    'small':   (0.75 * $space-unit-fixed),
+    'medium':   1.25 * $space-unit-fixed,
+    'large':   (2 * $space-unit-fixed),
+    'x-large':   (3.25 * $space-unit-fixed),
+    'xx-large':  (5.25 * $space-unit-fixed),
+  )
+);
+
+@function spacing($size: "medium", $scaling: 'fixed') {
+  
+  $scaling-map: map.get($spacings, $scaling);
+  
+  @if not $scaling-map {
+    @error "#{$scaling} is not a valid value for $scaling. Try one of the following instead #{map.keys($spacings)}";
+  } @else if not(map.has-key($scaling-map, $size)) {
+    @error "#{$size} is not a valid value for $size. Try one of the following instead [ #{map.keys($scaling-map)} ]";
+  };
+
+  @return map.get($scaling-map, $size);
+}
+  
+
+  

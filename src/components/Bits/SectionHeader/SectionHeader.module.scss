@@ -1,8 +1,9 @@
 @use 'abstracts' as __;
 
+$main-color: __.color('text', 'light');
+$alternate-color: __.color('text', 'dark');
+
 .sectionHeader {
-  $main-color: __.color('text', 'light');
-  $alternate-color: __.color('text', 'dark');
 
   font-size: __.font-size('scale-4');
   text-transform: uppercase;
@@ -13,14 +14,18 @@
     display: block;
     height: 5px;
     border-bottom : 3px solid $main-color;
-    margin-bottom: 2rem;
+    margin-bottom: __.spacing('large');
   }
+  
+  & + * {
+    margin-top: __.spacing("x-large");
+  }
+}
 
-  &__alt {
-    color: $alternate-color;
+.alt {
+  color: $alternate-color;
 
-    &::after {
-      border-bottom-color: $alternate-color;
-    }
+  &::after {
+    border-bottom-color: $alternate-color;
   }
 }
